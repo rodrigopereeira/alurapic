@@ -1,4 +1,3 @@
 var http = require('http');
 
-http.createServer()
-  .listen(3000);
+http.createServer().listen(3000);
