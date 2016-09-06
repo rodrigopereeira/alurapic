@@ -1,4 +1,7 @@
 var http = require('http');
+var app = require('./config/express')
 
-//xxx criação de servidor na porta 3000
-http.createServer().listen(3000);
+http.createServer(app)
+    .listen(3000, function() {
+        console.log('Servidor iniciado');
+      });
