@@ -7,7 +7,7 @@ var app = express();
 app.use(express.static('./public'));
 app.use(bodyParser.json());
 
-//inserindo modulos de api e rotas pelo consign e passando o servidor como parametro
+//1.0 inserindo modulos de api e rotas pelo consign e passando o servidor como parametro
 consign({
         cwd: 'app'
     })
