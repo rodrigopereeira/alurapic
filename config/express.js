@@ -4,7 +4,6 @@ var bodyParser = require('body-parser');
 
 var app = express();
 
-//primeiro middleware
 app.use(express.static('./public'));
 app.use(bodyParser.json());
 
